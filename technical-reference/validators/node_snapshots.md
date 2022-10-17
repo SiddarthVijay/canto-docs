@@ -23,4 +23,4 @@ sudo systemctl start cantod
 journalctl -u cantod -f
 ```
 
-Snapshots available on [Polkachu](https://polkachu.com/tendermint_snapshots/canto)
+Snapshots also available on [Polkachu](https://polkachu.com/tendermint_snapshots/canto)
