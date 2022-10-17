@@ -51,6 +51,7 @@ You can add script to the cron
 ---
 
 ## Consuming Snapshot
+Snapshots also available on [Polkachu](https://polkachu.com/tendermint_snapshots/canto)
 
 ### Use Snapshot
 Backup priv_validator_key.json (cannot be recovered after following steps)
@@ -70,5 +71,4 @@ sudo systemctl start cantod
 journalctl -u cantod -f
 ```
 
-Snapshots also available on [Polkachu](https://polkachu.com/tendermint_snapshots/canto)
 ---
