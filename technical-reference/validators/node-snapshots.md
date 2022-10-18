@@ -16,6 +16,7 @@ git checkout patch/v1-canto
 
 ### Create new snapshot  
 ```bash
+cd scripts
 ./canto_snapshot.sh
 ```
 
@@ -36,9 +37,14 @@ Backup $HOME/.canto/priv_validator_state.json (cannot be recovered after followi
 ```bash
 sudo systemctl stop cantod
 cd $HOME/.cantod
+cp ./data/priv_validator_state.json ../
 rm -rf ./data
+mkdir data
+cd ./data
 wget -O <snapshot_file>.tar <host_url>
-tar -xvf <snapshot_file>.tar 
+tar -xvf <snapshot_file>.tar
+rm ./priv_validator_state.json
+mv ../priv_validator_state.json ./
 ```
 
 ### Restart Node
