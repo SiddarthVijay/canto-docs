@@ -35,8 +35,8 @@ Backup $HOME/.canto/priv_validator_state.json (cannot be recovered after followi
 
 ```bash
 sudo systemctl stop cantod
-cantod unsafe-reset-all
 cd $HOME/.cantod
+rm -rf ./data
 wget -O <snapshot_file>.tar <host_url>
 tar -xvf <snapshot_file>.tar 
 ```
